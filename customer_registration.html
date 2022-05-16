@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+</head>
+<div class="customer registration">
+<body>
+    <form method="post">
+        {% csrf_token %}
+
+        <h1>Customer Registration Form</h1>
+        <br>
+        <p>Customer Name: <input type="text" name="customer name" value="{{x1}}"></p>
+        <br>
+        <p>Customer Address: <input type="text" name="Customer Address" value="{{x2}}"></p>
+        <br>
+        <p>Customer Pancard: <input type="text" name="Customer Pancard" value="{{x3}}"></p>
+        <br>
+        <p>Customer Aadhar No: <input type="number" name="Cutomer Aadhaar No" value="{{x4}}"></p>
+        <br>
+        <p>Customer Phone No: <input type="number" name="Customer Phone No" value="{{x5}}"></p>
+        <br>
+        <br>
+        <br>
+        <p><input type="submit" value="Register"></p>
+
+    </form>
+    <a href="homepage.html">Click here to go back on home page</a>
+</body>
+</div>
+</html>

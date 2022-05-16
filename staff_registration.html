@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>staff registration page</title>
+</head>
+<div class="container">
+<body>
+    <form method="post">
+     {% csrf_token %}
+     <!-- 
+         {{form}}
+     -->
+        
+            <h1>Staff Registration Form</h1>
+        <p>Staff Name : <input type="text" name="staff name" value="{{n1}}" required placeholder="Enter your Full Name"></p>
+        <br>
+
+        <p>Staff Address : <textarea name="Staff Address" value="{{n2}}" cols="100" rows="10"></textarea></p>
+        <br>
+
+        <p>Staff Pancard Number : <input type="text" name="Staff Pancard" value="{{n3}}" required placeholder="Enter Your Pancard Number"> </p>
+        <br>
+
+        <p>Staff Aadhaar Card Number : <input type="number" name="Staff Aadhaar" value="{{n4}}"> </p>
+        <br>
+
+        <p>Staff Phone Number : <input type="number" name="Staff Phone Number" value="{{n5}}"></p>
+        
+        <p><input type="submit" value="Register">Submit</p>
+    </form>
+<a href="homepage.html">Click here to go back on home page</a>
+    
+</body>
+</div>
+</html>
